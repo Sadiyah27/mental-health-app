@@ -1,0 +1,80 @@
+
+<!DOCTYPE html> 
+<html Lang=en> 
+    <head>
+        <meta charset="utf-8">
+        <title> Log your mood </title>
+        <link rel="stylesheet" href="Styles/input.css">
+        <script  src="Javascript/mood.js"></script>
+    </head>
+    <body class="sad-page" onload="myFunction()">
+        <div class="header">
+            <a href="menu.html">
+                <img src="assets/updated-logo.png" alt="logo">
+            </a>
+            <h1>How are you feeling today?</h1>
+        </div>
+        <div class="mood-pic">
+                <img src="assets/Sad.png" alt="Sad emoticon">
+            </div>
+   
+        <form action="menu.html">
+            
+
+            <p>Feeling:  <span id="myProduct"></span></p>
+            <p>Rating: <span id="myRange"></span>/10</p>
+            <p>Date: <input type="text" id="currentDate"></p>
+            <p>Time: <input type="text" id="currentTime"></p>
+            <p>Location: <input type="text" ></p>
+            <p>Activity: <input type="text" ></p>
+            <button onclick="window.location.href = menu.html;"> Submit </button>
+            <!-- <input type="submit" onsubmit="checkSubmit()"> -->
+            <!-- <input type="submit" onclick="checkSubmit()"> -->
+
+        </form>
+
+    <br>
+        
+<!-- JavaScript code for the input page -->
+        <script>
+//Retrieving mood and rating from url
+            const queryString = window.location.search;
+            console.log(queryString);
+            const urlParams = new URLSearchParams(queryString);
+            const product = urlParams.get('mood-buttons')
+            const range = urlParams.get('range')
+
+            console.log(product);
+            console.log(range);
+
+            function myFunction() {
+              document.getElementById("myProduct").innerHTML = product;
+                document.getElementById("myRange").innerHTML = range;
+            }
+//Getting date and time
+          var today = new Date();
+          var date = today.getDate()+"/"+(today.getMonth()+1)+"/"+today.getFullYear();  
+
+        var today = new Date();
+        var time = today.getHours() + ":" + ('0'+today.getMinutes()).slice(-2);
+        document.getElementById("currentTime").value = time;
+        document.getElementById("currentDate").value = date;
+        
+        function checkSubmit() {
+            //var s = document.querySelector("body > form > a > input[type=submit]").addEventListener("click", checkSubmit);
+            window.location.replace("menu.html");
+        }
+
+        </script>         
+</body>
+
+<footer>
+    <div class="back-button">
+        <a href="javascript:history.back()">
+                <img class="back" src="assets/back-arrow.png" alt="Back button">
+            </a>
+    </div>
+</footer>
+
+
+</html>

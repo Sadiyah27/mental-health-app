@@ -1,0 +1,167 @@
+header {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 30px;
+    height: 30px;
+    margin-left: 550px;
+}
+.header img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+div.back-button {
+    position:fixed;
+    bottom: 0;
+    width: 35px;
+    margin-right: 250px;
+}
+
+body {
+    text-align: center;
+    align-content: center;
+}
+body {background-color: #e3f1ff;}
+.meh-page {background-color: #ffefd5;}
+.happy-page {background-color: #e0ffeb;}
+.sad-page {background-color: #fce9e8;}
+
+ /* Logo of lotus on top of page*/
+ .logo-row{
+    text-align: center;
+  }
+  .logo {
+    width: 75px;
+    text-align: center;
+  }
+
+form {
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.btn {
+ display: block;
+ margin-bottom: 10px;
+}
+
+input[type=radio]{display:none;}
+input[type=submit]{display:none;}
+
+input[type=radio] + label.btn{
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 7px 20px;
+    border: 2px solid grey;
+    outline: none;
+    position: relative;
+    transition: all 0.3s;
+    background: transparent;
+    color: black;
+    transition: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ input[type=text], select {
+     width: 200px;
+    margin: 0 auto;
+     margin-bottom: 10px;
+    text-align: center;
+    padding: 10px 20px;
+    border: 2px solid grey;
+    outline: none;
+    position: relative;
+    transition: all 0.3s;
+    background: transparent;
+    color: black;
+    transition: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type=radio]:checked + label.btn{
+        border: 2px solid black;
+        font-weight: bold;
+        background-color:rgba(0, 0, 0, 0.1);
+}
+input[type=text] + label.btn:hover{
+        border: 2px solid black;
+        font-weight: bold;
+}
+input[type=text]:select + label.btn{
+        border: 2px solid black;
+        font-weight: bold;
+        background-color:rgba(0, 0, 0, 0.1);
+}
+.mood-pic img{
+    width: 100px;
+    height: 100px;
+}
+input[type=submit]+label.btn {
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 10px 20px;
+    border: 2px solid grey;
+    outline: none;
+    position: relative;
+    transition: all 0.3s;
+    background: transparent;
+    color: black;
+    transition: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type=submit] + label.btn:hover{
+        border: 2px solid black;
+        font-weight: bold;
+}
+.myslider {
+    -webkit-appearance: none;
+    margin-top: 20px;
+    background: #ffffff ;
+    border-style: solid;
+    border-color: #323634;
+    width: 300px;
+    height: 10px;
+    border-radius: 5px;  
+    opacity: 2;
+    cursor: pointer;
+   }
+  
+.myslider:hover {
+    opacity: 1;
+}
+.myslider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%; 
+  background: grey;
+  cursor: pointer;
+}
+
+.myslider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: grey;
+  cursor: pointer;
+}
+
+input::placeholder{
+    color: black;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+

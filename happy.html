@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html Lang=en> 
+    <head>
+        <meta charset="utf-8">
+        <title> Happy page </title>
+        <!-- CSS sheet for the welcome page -->
+        <link rel="stylesheet" href="Styles/mood-style.css">
+        <script  src="Javascript/mood.js"></script>
+    </head>
+    <body class="happy-page">
+        <div class="header">
+            <a href="menu.html">
+                <img src="assets/updated-logo.png" alt="logo">
+            </a>
+            
+            <h1>How are you feeling today?</h1>
+        </div>
+        <form id="mood-options" method="GET" action="happy-log-input.html">
+        <div class="btn-group">
+            <input type="radio" id="mood-button-1" name="mood-buttons" value="Amazed">
+            <label for="mood-button-1" class="btn">Amazed</label>
+
+            <input type="radio" id="mood-button-2" name="mood-buttons" value="Excited">
+            <label for="mood-button-2" class="btn">Excited</label>
+
+            <input type="radio" id="mood-button-3" name="mood-buttons" value="Happy">
+            <label for="mood-button-3" class="btn">Happy </label>
+
+            <input type="radio" id="mood-button-4" name="mood-buttons" value="Calm">
+            <label for="mood-button-4" class="btn">Calm</label>
+
+            <input type="radio" id="mood-button-5" name="mood-buttons" value="Grateful">
+            <label for="mood-button-5" class="btn">Grateful</label>
+
+            <input type="radio" id="mood-button-6" name="mood-buttons" value="Hopeful">
+            <label for="mood-button-6" class="btn">Hopeful</label>
+            
+            <input type="text" id="mood-button-7" name="mood-buttons" placeholder="Add here" value="">
+            <label for="mood-button-7" class="btn"></label>
+           </div>
+    
+             <div class="mood-pic">
+                <img src="assets/Happy.png" alt="alternatetext">
+            </div>
+            <div class="rangeslider">
+                1 <input type="range" name="range" min="1" max="10" value="5"
+                      class="myslider" id="sliderRange"> 10
+                <p><span id="demo"></span></p><br>
+
+            </div>
+
+            <input type="submit" value="Submit" id="save-button">
+            <label for="save-button" class="btn">Save</label>
+		
+        </form>
+           
+         <script>
+            
+        var rangeslider = document.getElementById("sliderRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = rangeslider.value;
+
+        rangeslider.oninput = function() {
+          output.innerHTML = this.value;
+        }
+        slider.onmouseup = function () {
+            document.getElementById("form").submit();
+        }
+</script>
+</body>
+
+<footer>
+    <div class="back-button">
+        <a href="javascript:history.back()">
+                <img class="back" src="assets/back-arrow.png" alt="Back button">
+            </a>
+    </div>
+</footer>
+    
+</html>

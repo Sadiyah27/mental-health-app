@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- head -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="width=device-width, initial-scale=1.0" content="Login page">
+        <meta name="HandheldFriendly" content="True">
+        <title> Login page </title>
+        <!-- CSS sheet for the login page -->
+        <link rel="stylesheet" href="Styles/login.css">
+        <!-- JavaScript sheet for the login page -->
+        <script src="Javascript/login.js"></script>
+    </head>
+
+    <!-- body -->
+    <body class="login" >
+        <!-- form -->
+        <form method="get">
+        <!-- Picture taken from https://www.flaticon.com -->
+        <!-- logo -->
+        <a href="index.html">
+            <img class="img1" src="assets/updated-logo.png" alt="Picture of logo for the web application">
+        </a>
+        <br>
+        <!-- link to the welcome page -->
+        <a href="index.html">
+            <!-- Picture taken from https://www.flaticon.com -->
+            <img class="img2" src="assets/back-arrow.png" alt="back button">
+        </a>
+        <!-- page title -->
+        <h1> Login: </h1>
+        <!-- Email label -->
+        <label> E-mail: </label>
+        <!-- Email text field -->
+        <input id="email" type="email" placeholder="jbond@email.com" minlength="5" required>
+        <!-- value="email" -->
+        <!-- Password label -->
+        <label> Password: </label>
+        <!-- Password text field -->
+        <input id="password" type="password" required>
+        <!-- value="password" -->
+        <!-- checkbox for users to make password visibile/invisible -->
+        <input id="passwordToggle" type="checkbox" onclick="passToggle()">
+        <br>
+        <br>
+        <!-- submit button -->
+        <button id="sign-in" name="sign-in" href="http://programminghead.com" type="submit" value="sign-in">Sign in</button>
+        <!-- end of form -->
+        </form>
+    </body>
+</html>

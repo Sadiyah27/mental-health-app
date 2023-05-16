@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- head -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="width=device-width, initial-scale=1.0" content="Sign-up page">
+        <meta name="HandheldFriendly" content="True">
+        <title> Profile page </title>
+        <!-- CSS sheet for the profile page -->
+        <link rel="stylesheet" href="Styles/sign-up.css">
+        <!-- JavaScript sheet for the profile page -->
+        <!-- <script src="Javascript/profile.js"></script> -->
+
+    </head>
+    
+    <!-- body -->
+    <body class="profile">
+        <!-- header -->
+        <header>
+            <!-- logo -->
+            <!-- Picture taken from https://www.flaticon.com -->
+            <a href="index.html">
+                <img class="img1" src="assets/updated-logo.png" alt="Picture of logo for the web application">
+            </a>
+            <br>
+             <!-- link to the welcome page -->
+            <a href="menu.html">
+            <!-- Picture taken from https://www.flaticon.com -->
+            <img class="img2" src="assets/back-arrow.png" alt="back button">
+            </a>
+        </header>
+
+        <!-- page title -->
+        <h1> My profile </h1>
+        <!-- form -->
+        <form method="get">
+        <!-- Name label -->
+        <label> Name: </label>
+        <!-- Name text field -->
+        <input type="text">
+        <br>
+        <br>
+        <!-- Age label -->
+        <label> Age: </label>
+        <!-- Age text field -->
+        <input type="number">
+        <br>
+        <br>
+        <!-- City label -->
+        <label> City: </label>
+        <!-- City text field -->
+        <input type="text">
+        <br>
+        <br>
+        <!-- University label -->
+        <label> University: </label>
+        <!-- University text field -->
+        <input type="text">
+        <br>
+        <br>
+        <!-- Hobbies/Interest label -->
+        <label> Hobbies/Interest: </label>
+        <!-- Hobbies/Interest text field -->
+        <input type="text">
+        <br>
+        <br>
+        <!-- E-mail label -->
+        <label> E-mail: </label>
+        <!-- Email text field -->
+        <input id="email" type="email" placeholder="jbond@email.com" minlength="5">
+        <!-- value="email" -->
+        <br>
+        <br>
+        <!-- Password label -->
+        <label for="password"> Password: </label>
+        <!-- Password text field -->
+        <input id="password" type="password">
+        <!-- value="password" -->
+        <!-- checkbox for users to make password visibile/invisible -->
+        <input id="profilePasswordToggle" type="checkbox" onclick="togglePass()">
+        <br>
+        <br>
+        <!-- Submit button -->
+        <button>Save</button>
+        <!-- <input type="submit" > -->
+        <!-- end of form -->
+        </form>
+    </body>
+</html>

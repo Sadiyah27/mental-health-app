@@ -1,0 +1,144 @@
+header {
+    margin-top: 10px;
+    padding-bottom: 5px;
+  }
+
+  /* Back button*/
+  div.back-button {
+    position:fixed;
+    bottom: 0;
+    width: 35px;
+     }
+     
+  .back{
+    width:35px;
+    }
+
+ /* Logo of lotus on top of page*/
+  .logo-row{
+    text-align: center;
+  }
+  .logo {
+    width: 75px;
+    text-align: center;
+  }
+
+ /* Font style for all pages*/
+body{
+    font-family:Comic Sans MS, Comic Sans, cursive;
+}  
+
+ /* Setting different background colours*/
+body.index{
+    background-color: #efe1fc;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+body.mood{
+    background-color: #e6fffd;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+body.share {
+    background-color: #ffe6f7;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+ /* Title of each page*/
+.page-header {
+display: flex;
+vertical-align: top;
+justify-content: center;
+font-size: 20px;
+
+}
+
+ /* Creating the menu*/
+
+.menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border: solid 2px #b3b3b3;
+    padding: 8px 100px;
+    color: black;
+    text-decoration:none; 
+    font-size: 25px;
+}
+
+.menu-button:hover{background-color: #e9d6ff;}
+
+ /* Lift My Mood page*/
+
+.mood-content {
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 75% 75%;
+    grid-gap: 35px;
+    padding-bottom: 550px;
+  }
+  
+  .mood-content > div{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    object-fit: contain;
+ 
+  }
+  .icon{
+      width: 70px;
+      height: 70px;
+      white-space: 50px;
+  }
+
+  .mood-content > div > img.icon{
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+
+  .mood-content > div > figure >  figcaption {
+    font-size: 25px;
+    padding-top: 15px;
+    text-align: center;
+  }
+
+
+  /* Share page*/
+
+  .share-content {
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 75% 75%;
+    grid-gap: 50px;
+    padding-bottom: 150px;
+
+  }
+  
+  .share-content > div{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    object-fit: contain;
+ 
+  }
+
+  .social{
+    width:100px;
+    height: 100px;
+        
+    }
+
+  .share-content > div > img.social{
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+
+
+
+
+  

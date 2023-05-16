@@ -1,0 +1,52 @@
+/* CSS for login page */
+/* back arrow */
+.img2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-left: 660px;
+}
+/* logo */
+.img1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    margin-left: 630px;
+}
+body.login {
+    text-align: center;
+    padding-top: 115px;
+    /* Pastel grey - rgb taken 
+    from https://www.schemecolor.com/shades-of-pastels.php */
+    background-color: rgb(197, 214, 186);
+}
+/* email input field */
+#email {
+    font-size: 15px;
+}
+/* p */
+.p.login {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+/* page header */
+h1.login {
+    font-family: monospace;
+}
+/* putting the box (of the toggle) inside the password input field */
+#loginPasswordToggle {
+    margin-left: -20px;
+    transform: scale(1.05);
+}
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
